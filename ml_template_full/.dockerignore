@@ -1,0 +1,9 @@
+.git
+__pycache__
+.mlflow
+mlruns
+data/raw/*
+!data/raw/sample.csv
+reports/*
+*.ipynb_checkpoints
+.dvc/

@@ -1,0 +1,15 @@
+stages:
+  prepare:
+    cmd: python -c "print('prepare stage – add your data prep here')"
+    deps:
+      - data/raw
+    outs:
+      - data/processed
+  train:
+    cmd: python main.py
+    deps:
+      - src
+      - config/config.yaml
+      - data/processed
+    outs:
+      - reports

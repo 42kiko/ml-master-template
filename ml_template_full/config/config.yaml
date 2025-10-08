@@ -1,0 +1,25 @@
+random_seed: 42
+experiment_name: default_experiment
+
+data:
+  input_csv: "data/raw/sample.csv"
+  target_column: "target"
+  datetime_column: "ds"
+  id_column: null
+
+cv:
+  n_splits: 5
+  shuffle: true
+
+timeseries:
+  frequency: null
+  lags: [1, 7, 30]
+  rolling_windows: [7, 30]
+  add_fourier: true
+  fourier_periods: [7, 30]
+  seasonal_decompose: false
+
+tuning:
+  strategy: "random"   # "grid" oder "random"
+  n_iter: 20
+  n_jobs: -1

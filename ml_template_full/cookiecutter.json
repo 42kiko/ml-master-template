@@ -1,0 +1,22 @@
+{
+  "project_name": "ml_template_full",
+  "author_name": "Your Name",
+  "open_source_license": [
+    "MIT",
+    "Apache-2.0",
+    "Proprietary"
+  ],
+  "python_version": "3.11",
+  "use_mlflow": [
+    "y",
+    "n"
+  ],
+  "use_dvc": [
+    "y",
+    "n"
+  ],
+  "use_docker": [
+    "y",
+    "n"
+  ]
+}
